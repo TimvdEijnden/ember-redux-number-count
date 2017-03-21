@@ -2,6 +2,10 @@ var number = ((state, action) => {
     if(action.type === 'ADD') {
         return state + 1;
     }
+
+    if(action.type === 'REMOVE') {
+        return state - 1;
+    }
     return state || 0;
 });
 

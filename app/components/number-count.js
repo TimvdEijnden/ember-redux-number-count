@@ -9,7 +9,8 @@ var stateToComputed = (state) => {
 
 var dispatchToActions = (dispatch) => {
   return {
-    add: () => dispatch({type: 'ADD'})
+    add: () => dispatch({type: 'ADD'}),
+    remove: () => dispatch({type: 'REMOVE'})
   };
 };
 
